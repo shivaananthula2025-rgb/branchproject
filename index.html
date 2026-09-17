@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .welcome-box {
+            background: white;
+            width: 450px;
+            padding: 50px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .welcome-box h1 {
+            font-size: 42px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .welcome-box p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .welcome-box button {
+            padding: 14px 35px;
+            border: none;
+            border-radius: 30px;
+            background: #667eea;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .welcome-box button:hover {
+            background: #764ba2;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="welcome-box">
+        <h1>Welcome!</h1>
+
+        <p>
+            We're happy to have you here.
+            Explore and enjoy our website.
+        </p>
+
+        <button onclick="welcomeMessage()">
+            Get Started
+        </button>
+    </div>
+
+    <script>
+        function welcomeMessage() {
+            alert("Welcome! Let's get started.");
+        }
+    </script>
+
+</body>
+</html>
